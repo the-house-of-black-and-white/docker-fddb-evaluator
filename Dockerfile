@@ -12,4 +12,4 @@ ADD evaluation/ evaluation/
 
 RUN cd evaluation && make
 
-# ENTRYPOINT /fddb/evaluation/evaluate
+ENTRYPOINT /fddb/evaluation/runEvaluate.pl
