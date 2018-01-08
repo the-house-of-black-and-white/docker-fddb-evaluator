@@ -76,7 +76,7 @@ foreach my $fi (1..10){
 #die;
 # run the actual evaluation code to obtain different points on the ROC curves
 #system($evaluateBin, "-a", $annotFile, "-d", $detFile, "-f", $detFormat, "-i", $imDir, "-l", $listFile, "-r", $detDir, "-s");
-system($evaluateBin, "-a", $annotFile, "-d", $detFile, "-f", $detFormat, "-i", $imDir, "-l", $listFile, "-r", $detDir);
+system($evaluateBin, "-a", $annotFile, "-d", $detFile, "-f", $detFormat, "-i", $imDir, "-l", $listFile, "-r", $detDir, "-z", ".jpg");
 
 # plot the two ROC curves using GNUplot
 makeGNUplotFile($detDir."ContROC.txt", $gpFile, $detDir, $detDir."ContROC.png");
